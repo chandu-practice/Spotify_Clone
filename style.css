@@ -1,0 +1,211 @@
+body{
+    background-color: black;
+}
+
+
+#logo{
+    width:160px;
+    height:80px;
+    object-fit: contain;  
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-color:black;
+    overflow-x: hidden;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 12px;
+}
+
+.sidebar{
+    height: 100vh;
+    width:min-content;
+}
+
+
+
+#backward_btn,#forward_btn{
+    background: black;
+    border-radius: 50%;
+    color:#fff;
+    min-height: 40px;
+    min-width:40px;
+}
+
+#Signup_Btn{
+    background-color: black;
+    color: white;
+    border-color: black;
+    font-weight: bold;
+}
+
+#Login_Signup_buttons,#action_buttons{
+    column-gap: 15px;
+}
+
+#login_Btn{
+    border-radius:28px;
+    width: 120px;
+    height:40px;
+    font-weight: bold;
+}
+
+.ms-4{
+    padding: 1rem!important;
+    color: white;
+    font-size: 15px;
+}
+
+#sidebar_list{
+    list-style-type:none;
+    background-color: black;
+    color: white;
+    padding-left: 5px;   
+}
+#sidebar_playlist{
+    list-style-type:none;
+    background-color: black;
+    color: white;
+    padding-left: 5px;
+    padding-top: 30px;
+
+}
+.fa{
+   font-size: 20px;
+   padding-bottom: 15px;
+}
+
+
+li:hover{
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color:rgb(43, 42, 42)
+}
+
+
+#main{
+    /* height: 100vh; */
+    font-size: 25px;
+    font-weight: bold;
+    color: honeydew;
+    text-align: center;
+    justify-content: center;   
+    min-width: fit-content;
+}
+.card{
+    align-items: center;
+    color: black;
+    /* width:auto;
+    height:80px;     */
+}
+#recentPlay{
+    display: flex;
+    flex-wrap:initial;
+}
+
+#recent_playlist_images{
+    min-width: 50px;
+    min-height: 50px;
+}
+
+
+#PlayList_Image_Div{
+    width: 100%-100vw;
+    height: 50vh;
+    background-color: #B9B9B9 ;
+}
+
+#PlayListHeading{
+    width: 100%-100vw;
+    height: 50vh;
+    background-color: #B9B9B9; 
+    padding: 25px 25px 25px 25px;     
+}
+
+#PlayList_Image{
+    width: 280px;
+    height:250px;
+    margin: 25px 25px 25px 25px;   
+}
+
+#Playlist_name{
+    font:bold 6vw Arial, sans-serif; 
+}
+
+
+#Playlist_Info{
+    font-family: helvetica;
+}
+
+thead,tr{
+    font: bold 2vh Arial, sans-serif; 
+    background-color:black;
+    opacity: 0.9;
+    color: seashell;
+}
+table{
+    background-image: url("https://images.unsplash.com/photo-1487215078519-e21cc028cb29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    opacity: 0.7;
+    
+}
+
+tr:hover{
+    background-color:#535252 !important;
+    color: black;
+    height: fit-content !important;
+    
+
+}
+#track_row:hover{
+    background-color:#535252 !important;
+    color: black;
+
+}
+
+#image_col,#track_name,#track_movie_name,#track_add_button{
+    display: flex;
+    align-items:center;
+    text-align: start;
+    
+}
+
+#track_img{
+    width:50px;
+    height: 50px;
+}
+
+#track_row{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+#track_card,#Recomendation_Heading{
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.7;    
+}
+
+#Add_button{
+    background-color: black;
+    color: #fff;
+    border-color: darkgrey;
+}
+
+.timeDelete > .Delete_button{
+    
+    color: #fff;
+    visibility: hidden;     
+
+}
+
+.timeDelete:hover > .Delete_button{
+    visibility: visible;
+    background-color: #535252;
+    border:hidden;
+
+}

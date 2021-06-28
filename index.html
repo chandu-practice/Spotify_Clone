@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Home Page</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="getParameter()">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-lg-2 col-md-4 col-sm-4 sidebar">   
+                <div class="sidenav">
+                    <img src="https://1000logos.net/wp-content/uploads/2017/08/Spotify-symbol.jpg" alt="Spotify Logo" id="logo">
+                    <ul id="sidebar_list">
+                        <li class="nav-item"><i class="fa fa-home"></i> <span class="ms-4">HOME</span></li>
+                        <li class="nav-item"><i class="fa fa-search"></i> <span class="ms-4">Search</span></li>
+                        <li class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                            <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                            <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                            <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                            <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                          </svg><span class="ms-4">Library</span></li>
+                    </ul>
+                    <ul id="sidebar_playlist">
+                        <li class="nav-item"><i class="fa fa-plus-square"></i> <span class="ms-4">Create Playlist</span></li>
+                        <li class="nav-item"><i class="fa fa-heart"></i> <span class="ms-4">Liked Songs</span></li>
+                        <li class="nav-item"  onclick="getUserPlaylist()" id="xx"><i class="fa fa-spotify"></i> <span class="ms-4"  id ="userPlayList">User Playlist</span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="col col-lg-10 col-md-8 col-sm-8">
+                <nav class="navbar navbar-dark">
+                    <div class="d-flex justify-content-lg-start" id="action_buttons">
+                        <input type="button" value="&#60;" id="backward_btn">
+                        <input type="button" value="&#62" id="forward_btn">
+                    </div>                  
+                   <div class="d-flex justify-content-lg-end" id="Login_Signup_buttons">
+                        <input type="button" value="SIGN UP" id="Signup_Btn">   
+                        <input type="button" value="LOG IN" id="login_Btn"  onclick="login_cred()">                            
+                   </div>                
+                </nav>
+                <div id="main">
+
+                    Login To Access the Functionalities
+
+                </div>
+            </div>   
+        </div>             
+
+    </div>
+   
+ <script src="main.js"></script>    
+</body>
+</html>
